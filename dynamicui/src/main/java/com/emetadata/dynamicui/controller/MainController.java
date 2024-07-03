@@ -12,7 +12,7 @@ public class MainController {
         return "index";
     }
 
-     @RequestMapping(value = "/{path:[^\\.]*}")
+     @RequestMapping(value = "")
     public String redirect() {
         return "forward:/";
     }
