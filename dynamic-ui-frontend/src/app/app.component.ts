@@ -1,25 +1,15 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { NzDrawerModule } from 'ng-zorro-antd/drawer';
-import { NzButtonModule } from 'ng-zorro-antd/button';
-import { NzFormModule } from 'ng-zorro-antd/form';
-import { NzInputModule } from 'ng-zorro-antd/input';
-import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
-import { NzSelectModule } from 'ng-zorro-antd/select';
-import { AffixComponentsComponent } from './affix-components/affix-components.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CollapseWithoutArrowComponent } from './collapse-without-arrow/collapse-without-arrow.component';
+import { BrowserModule } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
     RouterOutlet,
-    NzDrawerModule,
-    NzButtonModule,
-    NzFormModule,
-    NzInputModule,
-    NzDatePickerModule,
-    NzSelectModule,
-    AffixComponentsComponent
+    CollapseWithoutArrowComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
